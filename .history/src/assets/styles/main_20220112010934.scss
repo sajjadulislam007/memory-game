@@ -1,0 +1,33 @@
+// Raw bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Google Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+//External Font
+@font-face {
+  font-family: 'moranga';
+  src: url('../fonts/latinotype-moranga-bold.otf') format('otf');
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+$text_color_normal: #0d1117;
+$text_color_dark_mode: #f0f2f8;
+$body_bg_normal: #1b1523;
+$body_bg_dark-mode: #090c10;
+$button_border_normal: #f0f2f8 0px 0px 0px 2px;
+$button_border_hover: #f0f2f8 0px 0px 0px 5px;
+$black: #0d1117;
+$white: #ffffff;
+
+//Fonts
+$moranga: 'moranga', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$poppins: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+//My Css
+@import '_base';
+@import '';
+@import '_card';

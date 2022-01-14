@@ -1,0 +1,36 @@
+.cardContainer {
+  &__card {
+    margin-bottom: 20px;
+    border: 2px solid $white;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s ease;
+      &:hover{
+        transform: scale(1.);
+      }
+      &.front {
+        transform: rotateY(90deg);
+        transition: all ease-in 0.2s;
+        position: absolute;
+      }
+      img.back {
+        transition: all ease-in 0.2s;
+        transition-delay: 0.2s;
+      }
+    }
+    &.flipped {
+      img.front {
+        transform: rotateY(0deg);
+        transition-delay: 0.2s;
+      }
+      img.back {
+        transform: rotateY(90deg);
+        transition-delay: 0s;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.cardContainer {
+  &__card {
+    margin-bottom: 20px;
+    border: 2px solid $white;
+    overflow: hidden;
+    border-radius: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    img.front{}
+    &.flipped {
+      img.front {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
