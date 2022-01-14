@@ -1,7 +1,6 @@
 import React from 'react';
 import Card_container from './Card_container';
 import Header from './Header';
-import Name from './Name';
 
 const Container = ({
   shuffleCards,
@@ -29,7 +28,7 @@ const Container = ({
         choiceTwo={choiceTwo}
         disabled={disabled}
       />
-      <Name />
+      <Na
     </div>
   );
 };
